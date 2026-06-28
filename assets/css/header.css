@@ -162,3 +162,101 @@
       inset-block-end: -0.35em;
     }
   }
+
+/*************** MOBILE MENU ***************/
+@media (max-width: 991px) {
+  #side-nav-panel {
+    box-sizing: border-box;
+    padding-top: 3.75rem;
+  }
+
+  #side-nav-panel .searchform {
+    margin-top: 0;
+    margin-bottom: 1.35rem;
+  }
+
+  html.panel-opened .side-nav-panel-close {
+    top: 0.8rem;
+    right: auto;
+    left: min(242px, calc(100vw - 3rem));
+    z-index: 9999 !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    color: #1e306e;
+    opacity: 1;
+  }
+
+  html.panel-right-opened.panel-opened .side-nav-panel-close {
+    right: 1rem;
+    left: auto;
+  }
+
+  html.panel-opened .side-nav-panel-close svg line {
+    stroke: #1e306e;
+  }
+
+  #nav-panel {
+    position: relative;
+  }
+
+  #nav-panel .container {
+    padding-top: 3.25rem;
+  }
+
+  #nav-panel .mobile-nav-wrap {
+    padding-top: 0.75rem;
+  }
+
+  #nav-panel .searchform,
+  #nav-panel .searchform-popup {
+    margin-top: 0;
+    margin-bottom: 1.35rem;
+  }
+
+  #nav-panel .mfp-close,
+  #nav-panel .close,
+  #nav-panel .btn-close,
+  #nav-panel .btn-close-search-form {
+    position: absolute;
+    top: 0.85rem;
+    right: 1rem;
+    left: auto;
+    z-index: 20;
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+    color: #1e306e;
+    background: transparent;
+    line-height: 2rem;
+    opacity: 1;
+  }
+
+  #nav-panel .mfp-close::before,
+  #nav-panel .mfp-close::after,
+  #nav-panel .close::before,
+  #nav-panel .close::after,
+  #nav-panel .btn-close::before,
+  #nav-panel .btn-close::after,
+  #nav-panel .btn-close-search-form::before,
+  #nav-panel .btn-close-search-form::after {
+    color: #1e306e;
+    border-color: #1e306e;
+  }
+
+  #nav-panel .mfp-close:hover,
+  #nav-panel .mfp-close:focus,
+  #nav-panel .close:hover,
+  #nav-panel .close:focus,
+  #nav-panel .btn-close:hover,
+  #nav-panel .btn-close:focus,
+  #nav-panel .btn-close-search-form:hover,
+  #nav-panel .btn-close-search-form:focus {
+    color: #1e306e;
+    opacity: 1;
+  }
+}
