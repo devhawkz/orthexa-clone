@@ -2,12 +2,13 @@
 
 defined( 'ABSPATH' ) || exit;
 
+require_once get_stylesheet_directory() . '/inc/translation-strings.php';
+
 add_action( 'wp_enqueue_scripts', 'porto_child_enqueue_styles', 1001 );
 
 function porto_child_enqueue_styles() {
 	$theme_dir     = get_stylesheet_directory();
 	$theme_uri     = get_stylesheet_directory_uri();
-	$theme_version = wp_get_theme( get_stylesheet() )->get( 'Version' );
 
 	$style_path = $theme_dir . '/style.css';
 
