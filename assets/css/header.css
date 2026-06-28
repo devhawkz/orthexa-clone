@@ -1,0 +1,164 @@
+/*************** TOPBAR ***************/
+.custom-coupon-topbar {
+    --coupon-bg: #24366f;
+    --coupon-text: #ffffff;
+    --coupon-button-bg: #ffffff;
+    --coupon-button-text: #222222;
+  
+    inline-size: 100%;
+    min-block-size: clamp(1.35rem, 2.2vw, 1.9rem);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: clamp(0.35rem, 1vw, 0.9rem);
+  
+    margin: 0;
+    padding-block: 0;
+    padding-inline: clamp(0.35rem, 1.2vw, 0.8rem);
+  
+    background: var(--coupon-bg);
+    color: var(--coupon-text);
+  
+    box-sizing: border-box;
+    overflow: visible;
+    position: relative;
+    z-index: 1000;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+  }
+  
+  .custom-coupon-topbar,
+  .custom-coupon-topbar *,
+  .custom-coupon-topbar *::before,
+  .custom-coupon-topbar *::after {
+    box-sizing: border-box;
+  }
+  
+  .custom-coupon-topbar__label,
+  .custom-coupon-topbar__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    min-inline-size: 0;
+    max-inline-size: 100%;
+  
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  
+  .custom-coupon-topbar__label {
+    flex: 0 1 auto;
+  
+    color: var(--coupon-text);
+  
+    font-size: clamp(0.62rem, 1.1vw, 0.82rem);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  
+  .custom-coupon-topbar__button {
+    position: relative;
+    flex: 0 1 auto;
+  
+    min-block-size: clamp(0.9rem, 1.4vw, 1.15rem);
+  
+    padding-block: 0;
+    padding-inline: clamp(0.75em, 1.5vw, 1.35em);
+  
+    border: 0;
+    border-radius: 999em;
+  
+    background: var(--coupon-button-bg);
+    color: var(--coupon-button-text);
+  
+    font: inherit;
+    font-size: clamp(0.52rem, 1vw, 0.72rem);
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+  
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .custom-coupon-topbar__button::after {
+    content: "";
+    position: absolute;
+  
+    inline-size: 1.65em;
+    block-size: 1.65em;
+  
+    inset-inline-end: -0.65em;
+    inset-block-end: -0.55em;
+  
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 4L42 26L28 29L38 47L29 51L19 33L8 43V4Z' fill='%23F5A623' stroke='%23000000' stroke-width='4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  
+    pointer-events: none;
+  }
+  
+  .custom-coupon-topbar__button:hover {
+    background: var(--coupon-button-bg);
+    color: var(--coupon-button-text);
+  }
+  
+  .custom-coupon-topbar__button:focus-visible {
+    outline: 0.15em solid currentColor;
+    outline-offset: 0.2em;
+  }
+  
+  @media (max-width: 47.99rem) {
+    .custom-coupon-topbar {
+      min-block-size: clamp(1.25rem, 5.8vw, 1.6rem);
+      gap: clamp(0.25rem, 1.8vw, 0.5rem);
+      padding-inline: clamp(0.25rem, 1.8vw, 0.5rem);
+    }
+  
+    .custom-coupon-topbar__label {
+      font-size: clamp(0.55rem, 2.7vw, 0.68rem);
+      letter-spacing: 0;
+    }
+  
+    .custom-coupon-topbar__button {
+      min-block-size: clamp(0.82rem, 3.8vw, 1rem);
+      padding-inline: clamp(0.65em, 2.8vw, 1em);
+      font-size: clamp(0.46rem, 2.35vw, 0.58rem);
+    }
+  
+    .custom-coupon-topbar__button::after {
+      inline-size: 1.45em;
+      block-size: 1.45em;
+      inset-inline-end: -0.52em;
+      inset-block-end: -0.42em;
+    }
+  }
+  
+  @media (max-width: 24rem) {
+    .custom-coupon-topbar {
+      gap: clamp(0.15rem, 1.4vw, 0.35rem);
+    }
+  
+    .custom-coupon-topbar__label {
+      font-size: clamp(0.5rem, 2.4vw, 0.6rem);
+    }
+  
+    .custom-coupon-topbar__button {
+      padding-inline: 0.65em;
+      font-size: clamp(0.43rem, 2.2vw, 0.53rem);
+    }
+  
+    .custom-coupon-topbar__button::after {
+      inline-size: 1.35em;
+      block-size: 1.35em;
+      inset-inline-end: -0.45em;
+      inset-block-end: -0.35em;
+    }
+  }
