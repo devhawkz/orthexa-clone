@@ -13,3 +13,185 @@ Tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, 
 */
 
 /*************** ADD YOUR CUSTOM CSS HERE  ***************/
+
+/**
+ * Custom CSS for the Porto Child theme
+ */
+
+
+ .header-top-ads .porto-sicon-box{
+    border: none;
+ }
+
+
+ /* FEATURED PRODUCTS */
+ .ortho-feature-list {
+    background: #ffffff;
+    padding: 80px 20px;
+  }
+  
+  .ortho-feature-list__inner {
+    max-width: 1236px;
+    margin: 0 auto;
+  }
+  
+  .ortho-feature-list__title {
+    margin: 0 0 56px;
+    color: #222831;
+    font-size: clamp(34px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.12;
+    text-align: center;
+  }
+  
+  .ortho-product-feature {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.95fr);
+    align-items: center;
+    gap: 72px;
+    padding: 28px 0;
+  }
+  
+  .ortho-product-feature--reverse {
+    grid-template-columns: minmax(360px, 0.95fr) minmax(0, 1fr);
+  }
+  
+  .ortho-product-feature--reverse .ortho-product-feature__media {
+    order: 1;
+  }
+  
+  .ortho-product-feature--reverse .ortho-product-feature__content {
+    order: 2;
+  }
+  
+  .ortho-product-feature__content {
+    max-width: 600px;
+  }
+  
+  .ortho-product-feature__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    padding: 5px 12px;
+    border: 1px solid #d8dde5;
+    border-radius: 999px;
+    background: #f4f6f8;
+    color: #3d444f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  
+  .ortho-product-feature__title {
+    margin: 0 0 10px;
+    color: #303743;
+    font-size: clamp(26px, 2.5vw, 34px);
+    font-weight: 800;
+    line-height: 1.15;
+    font-size: 24px;
+    font-family: 'Poppins';
+  }
+  
+  .ortho-product-feature__rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+  
+  .ortho-product-feature__stars {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 4px;
+    background: #02b67a;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+  
+  .ortho-product-feature__rating-text {
+    color: #9a9a9a;
+    font-size: 16px;
+    line-height: 1.35;
+  }
+  
+  .ortho-product-feature__description {
+    max-width: 590px;
+    margin: 0 0 24px;
+    color: #1f1f1f;
+    
+    line-height: 1.45;
+  }
+  
+  .ortho-product-feature__price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 24px;
+    color: #1f1f1f;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  .ortho-product-feature__old-price {
+    color: #666666;
+    text-decoration: line-through;
+  }
+  
+  .ortho-product-feature__new-price {
+    color: #1f1f1f;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  
+  .ortho-product-feature__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 14px 24px;
+    border-radius: 9px;
+    background: #1F306E;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .ortho-product-feature__button:hover {
+    background: #1d2e62;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(36, 54, 111, 0.24);
+  }
+  
+  .ortho-product-feature__media {
+    display: block;
+    overflow: hidden;
+    border-radius: 24px;
+    text-decoration: none;
+  }
+  
+  /*
+  .ortho-product-feature__media img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 24px;
+  }
+  */
+
+  .ortho-feature-list__divider {
+    margin: 64px 0;
+    border: 0;
+    border-top: 1px solid #e2e2e2;
+  }
